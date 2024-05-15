@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "381241889717",
+    "project_id": "sampleproject-3e4d5",
+    "storage_bucket": "sampleproject-3e4d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381241889717:android:de50e13f57d09f14ccfffc",
+        "android_client_info": {
+          "package_name": "com.example.medicinedistributor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXepABRcV6m5s95QthefgE_vyLAR6_wmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

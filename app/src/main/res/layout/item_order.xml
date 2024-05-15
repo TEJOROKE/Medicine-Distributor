@@ -1,0 +1,90 @@
+<!-- item_order.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        >
+
+        <!-- Medicine Image -->
+        <ImageView
+            android:id="@+id/medicineImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_home_24" />
+
+        <!-- Medicine Name -->
+        <TextView
+            android:id="@+id/medicineNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="16sp" />
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textSize="16sp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="16sp" />
+
+        <!-- Shop Owner Name -->
+        <TextView
+            android:id="@+id/shopOwnerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Owner Name"
+            android:textSize="16sp" />
+
+        <!-- Shop Owner Address -->
+        <TextView
+            android:id="@+id/shopOwnerAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Owner Address"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/shopOwnerPhoneNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Owner Phone Number"
+            android:textSize="16sp" />
+        <!-- Add a button for changing order status -->
+        <Button
+            android:id="@+id/buttonChangeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onChangeStatusButtonClick"
+            android:text="Change Status" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
