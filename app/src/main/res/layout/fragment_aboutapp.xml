@@ -1,18 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".aboutapp">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".aboutapp"
+    android:background="@drawable/login">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About Us Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/lavender"/>
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittextback"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+
+
+                <!-- App Name -->
+            <TextView
+                android:id="@+id/textViewAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="MediConnect"
+                android:textColor="@color/lavender"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <!-- App Description -->
+                <TextView
+                    android:id="@+id/textViewAppDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewAppName"
+                    android:layout_marginTop="20dp"
+                    android:text="MediConnect makes ordering medicine easy for pharmacies and distributors. Our app helps pharmacies manage their inventory and lets distributors showcase their products to a wider audience."
+
+                    android:textSize="18sp"
+                    android:textColor="#424242"
+                    android:paddingHorizontal="20dp"/>
+
+                <!-- About Us Heading -->
+                <TextView
+                    android:id="@+id/textViewAboutUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textSize="24sp"
+                    android:layout_below="@id/textViewAppDescription"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"/>
+
+                <!-- About Us Content -->
+                <TextView
+                    android:id="@+id/textViewAboutUsContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewAboutUs"
+                    android:layout_marginTop="10dp"
+                    android:text="MediConnect simplifies medicine procurement, improves inventory management, and promotes collaboration between pharmacies and distributors. Our user-friendly platform helps businesses streamline operations and deliver excellent service."
+
+                    android:textSize="18sp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#424242"
+                    android:paddingHorizontal="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
